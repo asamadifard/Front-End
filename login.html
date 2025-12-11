@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song Application</title>
-    <script src="scripts/index.js" defer></script>
-    <script defer src="/scripts/script.js"></script>
-    <script defer src="/scripts/init.js"></script>
+    <script src="scripts/login.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <nav>
+    <h1>login page</h1>
+     <nav>
         <a href="/index.html">All Songs</a>
         <a href="/add_song.html">Add Songs</a>
         <a href="/delete.html">Delete Songs</a>
         <button id="logout" style="float: right;">logout</button>
     </nav>
-    <h1>All Songs</h1>
-    <ul>
-        <div id="list-of-songs"></div>
-    </ul>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="text" id="password">
+        <br>
+        <button id="statusBtn">Display Status</button>
 </body>
 </html>
